@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find User on GitHub</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+        
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color: #2C296D;
+        }
+
+        input{
+            width: 90vh;
+            text-align: center;
+            font-size: large;
+            color: aliceblue;
+            background-color: rgb(97, 41, 202);
+            border-radius: 5px;
+            border: none;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        input:focus{
+            border: none;
+            outline: none;
+        }
+
+        .card{
+            border: 2px solid rgb(14, 93, 124);
+            background-color: #2B296D;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            padding: 3rem;
+            max-width: 570px;
+        }
+        
+        .pic {
+            border: 5px solid #393b3b;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+        
+        .user-details{
+            color: #e9e9f0;
+            margin-left: 2rem;
+        }
+        
+        .user-details ul li strong {
+            font-size: 0.9rem;
+            margin-left: 0.5rem;
+        }
+
+        .repo {
+            background-color:#2a2a72;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            margin-right: 0.5rem;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form id = "form">
+    <input type="text" id="search"
+    placeholder="Search a Github User"/>
+    </form>
+    <main id="main"></main>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
