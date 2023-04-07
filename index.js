@@ -7,7 +7,7 @@ let APIURL = "https://api.github.com/users/";
 async function getUser(username) {
   const resp = await fetch(APIURL + username);
   const respData = await resp.json();
-  console.log("responseDatea", respData);
+  // console.log("responseDatea", respData);
   createUserCard(respData);
 
   getRepos(username);
@@ -49,13 +49,13 @@ function createUserCard(user) {
                         : ""
                     }
                         <ul class="info">
-                            <li>${
+                            <li style="margin:10px">${
                               user.followers != null ? user.followers : ""
                             }<b> Followers</b></li>
-                            <li>${
+                            <li style="margin:10px">${
                               user.following != null ? user.following : ""
                             }<b> Following</b></li>
-                            <li>${
+                            <li style="margin:10px">${
                               user.public_repos != null ? user.public_repos : ""
                             }<b> Public Repositories</b></li>
                         </ul>

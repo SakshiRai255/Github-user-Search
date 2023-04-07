@@ -10,7 +10,8 @@
  2. CSS
  3. JavaScript 
 
- ![Images](img/Screenshot%20(23).png)
- ![Images](img/Screenshot%20(24).png)
+ ![Images](img/Screenshot%20(26).png)
+ ![Images](img/Screenshot%20(27).png)
+ ![Images](img/Screenshot%20(28).png)
 
- [Deployed-link]()
+ [Deployed-link](https://mygithubusersearch.netlify.app/)
